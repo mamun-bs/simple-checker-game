@@ -1,0 +1,186 @@
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.App-logo {
+  -webkit-animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 20s linear;
+  height: 35px;
+}
+
+.App-header {
+  background-color: black;
+  height: 50px;
+  padding: 10px 0 30px 0;
+  color: white;
+}
+
+.App-header h2 {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.board {
+  width: 550px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 3px solid black;
+}
+
+.row {
+  height: 65px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+}
+
+.square {
+  cursor: pointer;
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 2px solid gray;
+}
+
+.selected {
+  border: 2px solid blue;
+}
+
+.red {
+  background-color: black;
+}
+
+.black {
+  background-color: white;
+}
+
+.player-one,
+.player-two {
+  border-radius: 50%;
+  width: 70%;
+  height: 70%;
+  border: 2px solid black;
+}
+
+span.player-one,
+span.player-two {
+  margin-left: 10px;
+  margin-bottom: -3px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.player-one {
+  background-color: grey;
+}
+
+.player-two {
+  background-color: #9a890c;
+}
+
+.restart-btn {
+  padding: 10px 30px;
+  background-color: #9a890c;
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  border: 2px solid #9a890c;
+}
+
+#winner {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.9);
+  left: 0;
+  top: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#winner p {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#winner button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 300ms linear;
+}
+
+#winner button:hover {
+  background-color: black;
+  color: white;
+}
+
+.king::before {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 50px;
+  background-image: url("./GOT_crown.png");
+  background-size: 100% 100%;
+  background-position: 0 2px;
+  background-repeat: no-repeat;
+  -webkit-animation: crown-logo-spin infinite 20s linear;
+  animation: crown-logo-spin infinite 20s linear;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes crown-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes crown-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
